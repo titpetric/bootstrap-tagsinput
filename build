@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+MYPATH=$(dirname $(readlink -f $0))
+cd $MYPATH
+npm install
+grunt install
+grunt test
+grunt build
